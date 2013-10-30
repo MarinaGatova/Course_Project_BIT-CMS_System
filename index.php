@@ -1,8 +1,5 @@
 <?php
-include 'system/loader.php';
-Loader::setAutoloader();
+include 'system/bootstrap.php';
 
-
-new Test();
-
-
+$bootstrap = new system\Bootstrap();
+$bootstrap->init();
